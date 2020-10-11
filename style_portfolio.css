@@ -60,11 +60,13 @@ body {
 }
 
 button {
-    border: 1px solid white;
+    /*    border: 1px solid white;*/
+    border: none;
     background-color: transparent;
     color: white;
-    font-size: calc(0.1rem + 0.8vw);
+    font-size: calc(0.3rem + 0.6vw);
     text-align: left;
+    line-height: 1.2;
 }
 
 .bg-dark {
@@ -92,4 +94,27 @@ nav {
 
 span {
     font-size: calc(0.5rem + 1vw);
+}
+
+
+.line-spacing {
+    animation: line-spacing 3s infinite;
+}
+
+@keyframes line-spacing {
+    0% {
+        letter-spacing: 1px;
+    }
+
+    50% {
+        letter-spacing: 2px;
+    }
+
+    100% {
+        letter-spacing: 1px;
+    }
+}
+
+p {
+    line-height: 5px;
 }
