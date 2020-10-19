@@ -121,6 +121,64 @@ span {
     }
 }
 
-p {
+.text {
     line-height: 5px;
 }
+
+#intro a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-header {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: none;
+    border-bottom: 0;
+}
+
+#intro {
+    margin-left: 1px;
+    margin-right: 1px;
+
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #B6450F;
+    background-clip: border-box;
+    border: 0;
+    border-radius: 0;
+/*    margin-bottom: 1px;*/
+
+
+    font-family: helvetica;
+    color: white;
+}
+
+.card h5 {
+    text-transform: uppercase;
+}
+
+.card:first-child {
+    margin-top: 1px;
+}
+
+.card:nth-child(2) {
+    margin-top: 2px;
+}
+
+.card:nth-child(3) {
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+/*
+#intro p {
+    padding-left: 50px;
+    padding-right: 50px;
+}*/
