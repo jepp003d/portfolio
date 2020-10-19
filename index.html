@@ -56,7 +56,8 @@
 
                     <div class="overlay">
 
-                        <div class="text"><a href="http://mmd-andrea.dk/kea/2_semester/2sem_eksamensopgave/index.html" target="_blank"><button class="">WWW.<br>DÖGG DESIGN<br>--></button></a></div>
+                        <div class="text"><a href="http://mmd-andrea.dk/kea/2_semester/2sem_eksamensopgave/index.html" target="_blank"><button class="">WWW.<br>DÖGG DESIGN<br><sup class="arrow">--></sup>
+                                </button></a></div>
 
                     </div>
 
@@ -82,7 +83,7 @@
                     <img class="img-fluid overlay_1 align-self-center" src="img/section_2/1.jpg" alt="">
                     <a href="http://keajeppe.dk/kea/07_dynamisk/typografi/" target="_blank">
                         <div class="overlay">
-                            <div class="text"><a href="http://keajeppe.dk/kea/07_dynamisk/typografi/" target="_blank"><button class="text-right">WWW.<br>TYPOGRAPHORUM<br>--></button></a></div>
+                            <div class="text"><a href="http://keajeppe.dk/kea/07_dynamisk/typografi/" target="_blank"><button class="text-right">WWW.<br>TYPOGRAPHORUM<br><sup class="arrow">--></sup></button></a></div>
                         </div>
                     </a>
                 </div>
@@ -97,7 +98,7 @@
                     <img class="img-fluid overlay_1 align-self-center" src="img/section_2/10.jpg" alt="">
                     <a href="http://keajeppe.dk/kea/kommensense/index.html" target="_blank">
                         <div class="overlay">
-                            <div class="text"><a href="http://keajeppe.dk/kea/kommensense/index.html" target="_blank"><button class="text-right">WWW.<br>KOMMEN SENSE<br>--></button></a></div>
+                            <div class="text"><a href="http://keajeppe.dk/kea/kommensense/index.html" target="_blank"><button class="text-right">WWW.<br>KOMMEN SENSE<br><sup class="arrow">--></sup></button></a></div>
                         </div>
                     </a>
                 </div>
@@ -119,7 +120,7 @@
                 <div class="container_overlay">
                     <img class="img-fluid overlay_1 align-self-center" src="img/lady/3.jpg" alt="">
                     <div class="overlay">
-                        <div class="text"><a href="http://www.mmd-andrea.dk/kea/2_semester/tema9/21-5/forside.html" target="_blank"><button class="text-right">WWW.<br>21-5<br>--></button></a></div>
+                        <div class="text"><a href="http://www.mmd-andrea.dk/kea/2_semester/tema9/21-5/forside.html" target="_blank"><button class="text-right">WWW.<br>21-5<br><sup class="arrow">--></sup></button></a></div>
                     </div>
                 </div>
 
@@ -143,7 +144,7 @@
                 <div class="container_overlay">
                     <img class="img-fluid overlay_1 align-self-center" src="img/singles_2/3.jpg" alt="">
                     <div class="overlay">
-                        <div class="text"><a href="https://youtu.be/YIqdeWu3XEw" target="_blank"><button class="text-right">VIDEO.<br>NW GALLERY<br>--></button></a></div>
+                        <div class="text"><a href="https://youtu.be/YIqdeWu3XEw" target="_blank"><button class="text-right">VIDEO.<br>NW GALLERY<br><sup class="arrow">--></sup></button></a></div>
                     </div>
                 </div>
 
@@ -159,7 +160,7 @@
                 <div class="container_overlay">
                     <img class="img-fluid overlay_1 align-self-center" src="img/singles_2/2.jpg" alt="">
                     <div class="overlay">
-                        <div class="text"><a href="https://youtu.be/3w55yo9UU5w" target="_blank"><button class="">VIDEO.<br>NOOR<br>--></button></a></div>
+                        <div class="text"><a href="https://youtu.be/3w55yo9UU5w" target="_blank"><button class="">VIDEO.<br>NOOR<br><sup class="arrow">--></sup></button></a></div>
                     </div>
                 </div>
 
@@ -178,7 +179,7 @@
                 <div class="container_overlay">
                     <img class="img-fluid overlay_1 align-self-center" src="img/forest/7.jpg" alt="">
                     <div class="overlay">
-                        <div class="text"><a href="https://youtu.be/T-7iYbCE1ig" target="_blank"><button class="">VIDEO.<br>NOOR TRÆNING<br>--></button></a></div>
+                        <div class="text"><a href="https://youtu.be/T-7iYbCE1ig" target="_blank"><button class="">VIDEO.<br>NOOR TRÆNING<br><sup class="arrow">--></sup></button></a></div>
                     </div>
                 </div>
 
@@ -218,4 +219,37 @@
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        //        gsap.from(".arrow", {
+        //            splitText: 2000,
+        //            opacity: 0,
+        //            duration: 1,
+        //
+        //            scrollTrigger: {
+        //                trigger: ".arrow",
+        //                ease: "power2.inOut",
+        //                markers: "true",
+        //
+        //                start: "top 100%",
+        //                end: "center 40%",
+        //                scrub: true,
+        //
+        //            }
+        //        });
+
+        ScrollTrigger.create({
+            trigger: ".arrow",
+            start: "top center",
+            toggleClass: "arrow_space",
+            markers: "true",
+
+        });
+
+    </script>
+
 </body>
