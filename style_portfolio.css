@@ -48,7 +48,7 @@
 
 @font-face {
     font-family: 'manropemedium';
-    src: url('manrope-medium-webfont.woff2') format('woff2'),
+    src: url('webfontkit-20201022-085625/manrope-medium-webfont.woff2') format('woff2'),
         url('manrope-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -591,6 +591,10 @@ footer {
     font-size: calc(0.6rem + 0.4vw);
 }
 
+
+
+
+
 sup {
     top: -.2em;
     color: white;
@@ -611,3 +615,15 @@ a:nth-child(3) {
 .facecolor {
     color: #4966AA;
 }
+
+/*
+#feed .feed1 {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: manropemedium;
+
+    font-size: calc(0.7rem + 0.3vw);
+
+}
+*/
