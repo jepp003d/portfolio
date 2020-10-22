@@ -1,7 +1,95 @@
-body {
-    font-family: helvetica;
-    background-color: white;
+@font-face {
+    font-family: 'manropebold';
+    src: url('webfontkit-20201022-085625/manrope-bold-webfont.woff2') format('woff2'),
+        url('webfontkit-20201022-085625/manrope-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
+
+
+@font-face {
+    font-family: 'manropeextrabold';
+    src: url('webfontkit-20201022-085625/manrope-extrabold-webfont.woff2') format('woff2'),
+        url('webfontkit-20201022-085625/manrope-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'manropeextralight';
+    src: url('manrope-extralight-webfont.woff2') format('woff2'),
+        url('manrope-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'manropelight';
+    src: url('manrope-light-webfont.woff2') format('woff2'),
+        url('manrope-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'manropemedium';
+    src: url('manrope-medium-webfont.woff2') format('woff2'),
+        url('manrope-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'manroperegular';
+    src: url('webfontkit-20201022-085625/manrope-regular-webfont.woff2') format('woff2'),
+        url('webfontkit-20201022-085625/manrope-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'manropesemibold';
+    src: url('manrope-semibold-webfont.woff2') format('woff2'),
+        url('manrope-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    background-color: white;
+    font-family: manroperegular;
+}
+
+#text {
+    font-family: manroperegular;
+}
+
+
 
 .some {
     margin-bottom: 1px;
@@ -17,15 +105,15 @@ section .some {
 }
 
 section .h2 {
-    font-family: Helvetica;
+    font-family: manropeextrabold;
     font-size: calc(0.6rem + 0.4vw);
     font-weight: 900;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
 section .dot {
-    font-family: Helvetica;
+
     font-size: calc(2rem + 0.4vw);
     font-weight: 900;
 }
@@ -367,6 +455,7 @@ section a {
     font-size: calc(0.7rem + 0.4vw);
     font-weight: 200;
     transition: 0.5s ease;
+    font-family: manroperegular;
 }
 
 section a:hover {
@@ -415,6 +504,7 @@ section {
 h1 {
     margin: 0;
     font-size: calc(0.5rem + 1vw);
+    font-family: manropeextrabold;
 }
 
 .web_story {
@@ -461,13 +551,15 @@ h1 {
 
 section p {
     margin-top: 1rem;
-
+    font-family: manroperegular;
 }
+
+
 
 footer {
     background-color: black;
     color: white;
-    font-family: helvetica;
+    font-family: manroperegular;
     border-right: 2px solid white;
     border-left: 2px solid white;
     margin-top: 1px;
