@@ -1,5 +1,6 @@
 body {
     font-family: helvetica;
+    background-color: white;
 }
 
 .some {
@@ -48,7 +49,9 @@ section .dot {
     margin-top: 0;
 }
 
-.img-fluid {
+.img-fluid {}
+
+.img-padding {
     padding: 1px;
 }
 
@@ -279,6 +282,7 @@ button {
 nav {
     letter-spacing: 0.5px;
 
+
 }
 
 .navbar-toggler {
@@ -291,17 +295,21 @@ nav {
     transition: box-shadow .15s ease-in-out;
 }
 
-
-
 .navbar-dark .navbar-nav .nav-link {
     color: white;
     font-weight: 400;
     /*    border-left: 1px solid white;*/
     font-size: calc(0.7rem + 0.3vw);
+}
 
+.navbar {
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
 
-
-
+#accordion {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
 }
 
 sup {
