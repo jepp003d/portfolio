@@ -143,6 +143,30 @@ section .dot {
     padding: 1px;
 }
 
+p {
+    margin-bottom: 0px;
+}
+
+footer p:nth-child(1) {
+    font-size: calc(0.5rem + 0.4vw);
+}
+
+footer p:nth-child(2) {
+    font-size: calc(0.4rem + 0.4vw);
+}
+
+#footer_work .linkedin {
+    text-decoration: none;
+    color: white;
+}
+
+#footer_work div {
+    margin: 0 1.5px 0 1.5px;
+}
+
+b {
+    font-family: manropeextrabold;
+}
 
 
 #door .img-fluid:nth-child(1),
@@ -567,12 +591,17 @@ footer {
     font-size: calc(0.6rem + 0.4vw);
 }
 
+sup {
+    top: -.2em;
+    color: white;
+}
+
 .some a:nth-child(2),
 a:nth-child(3) {
     font-size: calc(0.6rem + 0.4vw);
     letter-spacing: 0;
     font-weight: 400;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .instacolor {
