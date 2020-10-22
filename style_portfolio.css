@@ -52,11 +52,130 @@ section .dot {
     padding: 1px;
 }
 
-#singles_1 .img-fluid:nth-child(2) {
-    padding-top: -1;
 
-    transform: translateY(1px);
+
+#door .img-fluid:nth-child(1),
+.img-fluid:nth-child(4),
+.img-fluid:nth-child(7),
+.img-fluid:nth-child(10) {
+    padding-left: 0;
 }
+
+#door .img-fluid:nth-child(3),
+.img-fluid:nth-child(6),
+.img-fluid:nth-child(9),
+.img-fluid:nth-child(12) {
+    padding-right: 0;
+}
+
+
+#singles_1 .img-fluid:nth-child(1),
+.img-fluid:nth-child(4),
+.img-fluid:nth-child(7),
+.img-fluid:nth-child(10) {
+    padding-left: 0;
+}
+
+#singles_1 .img-fluid:nth-child(3),
+.img-fluid:nth-child(6),
+.img-fluid:nth-child(9),
+.img-fluid:nth-child(12) {
+    padding-right: 0;
+}
+
+
+#lady .img-fluid:nth-child(1),
+.img-fluid:nth-child(4),
+.img-fluid:nth-child(7),
+.img-fluid:nth-child(10) {
+    padding-left: 0;
+}
+
+#lady .img-fluid:nth-child(3),
+.img-fluid:nth-child(6),
+.img-fluid:nth-child(9),
+.img-fluid:nth-child(12) {
+    padding-right: 0;
+}
+
+
+#singles_2 .img-fluid:nth-child(1),
+.img-fluid:nth-child(4),
+.img-fluid:nth-child(7),
+.img-fluid:nth-child(10) {
+    padding-left: 0;
+}
+
+#singles_2 .img-fluid:nth-child(3),
+.img-fluid:nth-child(6),
+.img-fluid:nth-child(9),
+.img-fluid:nth-child(12) {
+    padding-right: 0;
+}
+
+
+#forest .img-fluid:nth-child(1),
+.img-fluid:nth-child(4),
+.img-fluid:nth-child(7) {
+    padding-left: 0;
+}
+
+#forest .img-fluid:nth-child(3),
+.img-fluid:nth-child(6),
+.img-fluid:nth-child(9) {
+    padding-right: 0;
+}
+
+#kort .img-fluid:nth-child(3),
+.img-fluid:nth-child(6) {
+    padding-right: 0;
+}
+
+#kort .img-fluid:nth-child(1),
+.img-fluid:nth-child(4) {
+    padding-left: 0;
+}
+
+#grafik .img-fluid:nth-child(4) {
+    padding-right: 0;
+    padding-left: 1px;
+}
+
+#grafik .img-fluid:nth-child(1) {
+
+    padding-left: 0;
+}
+
+#kalender .img-fluid:nth-child(1),
+.img-fluid:nth-child(4),
+.img-fluid:nth-child(7),
+.img-fluid:nth-child(10) {
+    padding-left: 0;
+}
+
+#kalender .img-fluid:nth-child(3),
+.img-fluid:nth-child(6),
+.img-fluid:nth-child(9),
+.img-fluid:nth-child(12) {
+    padding-right: 0;
+}
+
+
+#kalender_2 .img-fluid:nth-child(1),
+.img-fluid:nth-child(4),
+.img-fluid:nth-child(7) {
+    padding-left: 0;
+}
+
+#kalender_2 .img-fluid:nth-child(3),
+.img-fluid:nth-child(6),
+.img-fluid:nth-child(9) {
+    padding-right: 0;
+}
+
+
+
+
 
 
 
@@ -243,7 +362,7 @@ section a {
 }
 
 section a:hover {
-    color: black;
+    color: white;
 }
 
 .some a:hover {
@@ -343,7 +462,7 @@ footer {
     font-family: helvetica;
     border-right: 2px solid white;
     border-left: 2px solid white;
-
+    margin-top: 1px;
 
     font-size: calc(0.6rem + 0.4vw);
 }
