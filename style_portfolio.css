@@ -129,8 +129,11 @@ section .dot {
     font-weight: 900;
 }
 
-.border-intro {
-    border-left: 2px solid #5C6B57;
+
+
+#intro #feed-omgang,
+#intro #feed-skill {
+    padding: 50px !important;
 }
 
 
@@ -640,7 +643,7 @@ li a {
     word-wrap: break-word;
     /*    background-color: #B6450F;*/
     /*    background-color: #507b3e;*/
-    background-color: #5C6B57;
+    background-color: #F2E4DF;
     background-clip: border-box;
 
     border: 0;
@@ -732,3 +735,15 @@ a:nth-child(3) {
 
 }
 */
+
+@media screen and (min-width: 768px) {
+    .border-intro {
+        border-left: 2px solid #F2E4DF;
+
+    }
+
+    #intro #feed-omgang,
+    #intro #feed-skill {
+        padding: 50px !important;
+    }
+}
