@@ -85,9 +85,20 @@ body {
     font-family: manroperegular;
 }
 
+.embed-responsive {
+    position: relative;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
 #text {
     font-family: manroperegular;
 }
+
+
 
 
 
@@ -343,6 +354,8 @@ b {
 
 }
 
+
+
 .container_overlay:hover .overlay {
     opacity: 1;
 }
@@ -376,6 +389,49 @@ b {
     z-index: 1
 }
 
+.container_overlay_text {
+    position: relative;
+    padding: 1px;
+
+}
+
+.text_overlay {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: calc(0.3rem + 0.6vw);
+    text-align: left;
+    line-height: 1.2;
+}
+
+.overlay_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.48);
+    z-index: 1;
+    line-height: 10px;
+}
+
+.container_overlay_text:hover .overlay_text {
+    opacity: 1;
+}
+
+.btn_text_overlay {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: calc(0.5rem + 0.6vw);
+    text-align: left;
+    line-height: 1.2;
+}
+
 button {
     /*    border: 1px solid white;*/
     border: none;
@@ -386,9 +442,25 @@ button {
     line-height: 1.2;
 }
 
+.a_accordion {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0;
+    font-size: calc(0.6rem + 0.3vw);
+    /*    font-weight: 100;*/
+    transition: 0.5s ease;
+    font-family: manroperegular;
+}
+
+
+
 .bg-dark {
     background-color: black !important;
     border: 1px solid white;
+}
+
+li a:hover {
+    color: #F2E4DF !important;
 }
 
 nav {
@@ -409,7 +481,7 @@ nav {
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
-    font-weight: 400;
+    font-weight: 300;
     /*    border-left: 1px solid white;*/
     font-size: calc(0.7rem + 0.3vw);
 }
@@ -424,11 +496,27 @@ nav {
     border-left: 1px solid white;
 }
 
+.sup1 {
+    top: -.1em;
+}
+
 sup {
     top: -.3em;
 }
 
 .arrow_space {
+    letter-spacing: 5px;
+    transition: 1s ease-out;
+
+}
+
+p a:hover .sup1 {
+    letter-spacing: 5px;
+    transition: 1s ease-out;
+    font-weight: 900;
+}
+
+h5:hover .arrow {
     letter-spacing: 5px;
     transition: 1s ease-out;
     font-weight: 900;
@@ -487,12 +575,12 @@ section a:hover {
 }
 
 .some a:hover {
-    color: white;
+    color: none;
 }
 
 
 section p {
-    font-size: calc(0.6rem + 0.4vw);
+    font-size: calc(0.6rem + 0.3vw);
 }
 
 
@@ -513,7 +601,8 @@ section p {
 .card-header {
     padding: .5rem 1rem;
     margin-bottom: 0;
-    background-color: #5C6B57;
+    background-color: #F2E4DF;
+
     border-bottom: 0;
 }
 
@@ -528,7 +617,14 @@ section {
 h1 {
     margin: 0;
     font-size: calc(0.5rem + 1vw);
-    font-family: manropeextrabold;
+    font-family: helvetica neue;
+    font-weight: 300;
+}
+
+li a {
+    font-family: helvetica neue;
+
+
 }
 
 .web_story {
@@ -546,6 +642,7 @@ h1 {
     /*    background-color: #507b3e;*/
     background-color: #5C6B57;
     background-clip: border-box;
+
     border: 0;
     border-radius: 0;
     /*    margin-bottom: 1px;*/
@@ -555,8 +652,13 @@ h1 {
     color: white;
 }
 
-.card h5 {
+.card h5 a {
     text-transform: uppercase;
+    letter-spacing: 0;
+    font-family: helvetica neue;
+    color: black;
+
+
 }
 
 .card:first-child {
@@ -593,11 +695,14 @@ footer {
 
 
 
+.arrow {
+    font-family: manroperegular;
+}
 
 
 sup {
     top: -.2em;
-    color: white;
+    /*    color: white;*/
 }
 
 .some a:nth-child(2),
